@@ -6,7 +6,21 @@
         <div>
             <input type='text' name='todo_input'>
             <button type='submit'>Add Todo</button>
-            <div class='todos'></div>
+            <div class='todos'>
+                <form>
+                    <input type="radio" id="all" name="todoip" value="all" checked onchange="funcname()">
+                    <label for="all">All</label>
+                    <input type="radio" id="completed" name="todoip" value="completed"  onchange="funcname()">
+                    <label for="completed">Completed</label>
+                    <input type="radio" id="pending" name="todoip" value="pending"  onchange="funcname()">
+                    <label for="pending">Pending</label>
+                </form>
+                <div >
+                    <ul class="render-list">
+    
+                    </ul>
+                </div>
+            </div>
         </div>
     </body>
     <script src='./script.js'></script>
